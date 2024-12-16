@@ -66,7 +66,7 @@ nav a:hover::after {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-between;
-    margin: 20px;
+    margin: 80px;
 }
 
 .contact-text {
@@ -81,7 +81,7 @@ nav a:hover::after {
     min-width: 300px; 
     padding: 75px;
     background-color: #FF4F07;
-    color: #d9dbdb;
+    color: #0738FA;
     border-radius: 8px;
     box-shadow: 0 2px 5px #0738FA;
 }

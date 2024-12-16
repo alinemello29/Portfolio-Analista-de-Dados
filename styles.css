@@ -60,7 +60,6 @@ nav a:hover::after {
     width: 100%; 
 }
 
-
 .container {
     display: flex; 
     justify-content: space-between;
@@ -68,11 +67,13 @@ nav a:hover::after {
     background-color: #0738FA;
     padding: 50px; 
     color: #FF4F07;
+    flex-wrap: wrap; 
 }
 
 .text-section {
     max-width: 600px; 
     margin-right: 20px; 
+    flex: 1; 
 }
 
 .text-section h1 {
@@ -86,9 +87,10 @@ nav a:hover::after {
 }
 
 .image-section img {
-    max-width: none; 
+    max-width: 100%; 
     height: auto; 
     width: 500px; 
+    flex: 1; 
 }
 
 footer {
@@ -108,4 +110,39 @@ footer {
 
 .footer-container p {
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    .text-section h1 {
+        font-size: 2.5em; 
+    }
+
+    .text-section p {
+        font-size: 1.2em; 
+    }
+
+    .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .text-section {
+        margin-right: 0; 
+        text-align: center; 
+    }
+
+    .image-section img {
+        width: 100%; 
+        max-width: 500px; 
+    }
+}
+
+@media (max-width: 480px) {
+    nav li {
+        margin: 0 10px; 
+    }
+
+    nav a {
+        font-size: 1em; 
+    }
 }

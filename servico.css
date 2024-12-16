@@ -111,3 +111,32 @@ footer {
 .footer-container p {
     margin: 0;
 }
+
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: center; 
+    }
+
+    nav li {
+        margin: 0 10px; 
+    }
+
+    .card {
+        width: 90%; 
+        max-width: 300px; 
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 1em; 
+    }
+
+    .card {
+        height: auto; 
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}

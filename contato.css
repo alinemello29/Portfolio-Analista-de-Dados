@@ -70,14 +70,14 @@ nav a:hover::after {
 
 .contact-text {
     flex: 1; 
-    min-width: 10px;
+    min-width: 300px; 
     padding: 100px;
     color: #d9dbdb;
 }
 
 .contact-form {
     flex: 1; 
-    min-width: 40px; 
+    min-width: 300px; 
     padding: 75px;
     background-color: #FF4F07;
     border-radius: 8px;
@@ -119,39 +119,41 @@ nav a:hover::after {
     font-weight: bold;
 }
 
-.hidden {
-    display: none;
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    nav li {
+        margin: 10px 0; 
+    }
+
+    .contact-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .contact-text {
+        padding: 50px 15px; 
+    }
+
+    .contact-form {
+        padding: 50px 15px; 
+        margin-top: 20px; 
+    }
 }
 
-.social-links {
-    margin-top: 20px;
-}
+@media (max-width: 480px) {
+    nav a {
+        font-size: 1em; 
+    }
 
-.social-links img {
-    width: 50px; 
-    margin-right: 10px;
-    transition: transform 0.3s; 
-}
+    .contact-text {
+        padding: 30px 15px; 
+    }
 
-.social-links img:hover {
-    transform: scale(1.2); 
-}
-
-footer {
-    background-color: #FF4F07;
-    color: #0738FA;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer-container {
-    align-items: center;
-    padding: 0 20px;
-}
-
-.footer-container p {
-    margin: 0;
+    .contact-form {
+        padding: 30px 15px; 
+    }
 }

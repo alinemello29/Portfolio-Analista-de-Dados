@@ -1,9 +1,15 @@
 Tarefa 12 - Entrega Final do Site Completo 🎉
+------------------------
 Descrição do Projeto 🌐
+
+
 Este projeto é a entrega final do site completo desenvolvido durante a Trilha 2. O objetivo é apresentar um site aprimorado em HTML, CSS e JavaScript, incorporando novas funcionalidades e design responsivo. 🚀
 
+-------------------------
 Requisitos do Site 📋
+
 Estrutura Básica
+
 Logotipo: Um logotipo visível no cabeçalho do site. 🖼️
 Menu: Navegação clara e intuitiva. 📖
 Título Destacado: Um título sobre o assunto do site com uma imagem de fundo atraente. ✨
@@ -27,3 +33,6 @@ Uso de iFrame: Para incorporar conteúdo externo, como vídeos ou mapas. 🌍
 Responsividade: O site se adapta a diferentes tamanhos de tela utilizando media queries. 📱💻
 JavaScript Interativo: Funcionalidades como envio de mensagens e outras interações dinâmicas. ⚡
 
+--------------------
+
+[Screen recording 2024-12-16 17.53.49.webm](https://github.com/user-attachments/assets/3f0cdc68-bb7c-4afa-bd2a-c0bc1dbfc678)

@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0738FA;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #FF4F07;
+}
+
+.logo {
+    margin-right: auto; 
+}
+
+.logo img {
+    height: 55px; 
+    width: auto;   
+}
+
+nav {
+    flex-grow: 0; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #0738FA;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+    font-size: 1.2em;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #d9dbdb;
+    width: 0;
+    transition: width 0.3s; 
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+}
+
+nav a:hover::after {
+    width: 100%; 
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.contact-text {
+    flex: 1; 
+    min-width: 10px;
+    padding: 100px;
+    color: #d9dbdb;
+}
+
+.contact-form {
+    flex: 1; 
+    min-width: 40px; 
+    padding: 75px;
+    background-color: #FF4F07;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #0738FA;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #d9dbdb;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d9dbdb;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #0738FA;
+    color: #d9dbdb;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links img {
+    width: 50px; 
+    margin-right: 10px;
+    transition: transform 0.3s; 
+}
+
+.social-links img:hover {
+    transform: scale(1.2); 
+}
+
+footer {
+    background-color: #FF4F07;
+    color: #0738FA;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-container p {
+    margin: 0;
+}

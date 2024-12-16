@@ -112,3 +112,59 @@ footer {
 .footer-container p {
     margin: 0;
 }
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    nav li {
+        margin: 10px; 
+    }
+
+    .about-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .image-section {
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+    .image-section img {
+        width: 100%; 
+        max-width: 400px; 
+    }
+
+    .text-section {
+        text-align: center; 
+    }
+
+    .text-section h2 {
+        font-size: 1.8em; 
+    }
+
+    .text-section p {
+        font-size: 1em; 
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 1em; 
+    }
+
+    .about-container {
+        padding: 10px; 
+    }
+
+    .text-section h2 {
+        font-size: 1.5em; 
+    }
+
+    .text-section p {
+        font-size: 0.9em; 
+    }
+}

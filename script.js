@@ -1,15 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.getElementById("contactForm");
-    const messageSent = document.getElementById("messageSent");
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
 
-    form.addEventListener("submit", function(event) {
-        event.preventDefault(); // Impede o envio padrão do formulário
+    document.getElementById('messageSent').innerText = 'Foi enviado com sucesso!';
+    document.getElementById('messageSent').style.display = 'block';
 
-        // Atualiza e mostra a mensagem de sucesso
-        messageSent.textContent = "Sua mensagem foi enviada com sucesso!";
-        messageSent.classList.remove("hidden");
-
-        // Limpa o formulário após o envio
-        form.reset(); 
-    });
+    this.reset();
 });

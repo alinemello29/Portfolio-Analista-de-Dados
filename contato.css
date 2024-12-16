@@ -113,6 +113,16 @@ nav a:hover::after {
     background-color: #0056b3;
 }
 
+#messageSent {
+    margin-top: 20px;
+    color: rgb(8, 250, 8);
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
 .social-links {
     margin-top: 20px;
 }

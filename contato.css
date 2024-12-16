@@ -65,7 +65,7 @@ nav a:hover::after {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-between;
-    margin: 15px;
+    margin: 20px;
 }
 
 .contact-text {
@@ -80,6 +80,7 @@ nav a:hover::after {
     min-width: 300px; 
     padding: 75px;
     background-color: #FF4F07;
+    color: #d9dbdb;
     border-radius: 8px;
     box-shadow: 0 2px 5px #0738FA;
 }
@@ -87,7 +88,6 @@ nav a:hover::after {
 .contact-form label {
     display: block;
     margin-bottom: 5px;
-    color: #d9dbdb;
 }
 
 .contact-form input,
@@ -95,13 +95,13 @@ nav a:hover::after {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #d9dbdb;
+    border: 1px solid #ddd;
     border-radius: 4px;
 }
 
 .contact-form button {
     background-color: #0738FA;
-    color: #d9dbdb;
+    color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -113,34 +113,65 @@ nav a:hover::after {
     background-color: #0056b3;
 }
 
-#messageSent {
+.social-links {
     margin-top: 20px;
-    color: rgb(8, 250, 8);
-    font-weight: bold;
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; 
-        align-items: center; 
-    }
+.social-links img {
+    width: 50px; 
+    margin-right: 10px;
+    transition: transform 0.3s; 
+}
 
-    nav li {
-        margin: 10px 0; 
-    }
+.social-links img:hover {
+    transform: scale(1.2); 
+}
 
+footer {
+    background-color: #FF4F07;
+    color: #0738FA;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-container p {
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
     .contact-container {
         flex-direction: column; 
         align-items: center; 
     }
 
-    .contact-text {
-        padding: 50px 15px; 
+    .contact-text, .contact-form {
+        padding: 50px; 
+        width: 90%; 
+        max-width: 600px; 
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: row; 
+        justify-content: center; 
     }
 
-    .contact-form {
-        padding: 50px 15px; 
-        margin-top: 20px; 
+    nav li {
+        margin: 0 10px; 
+    }
+
+    .contact-text, .contact-form {
+        padding: 30px; 
+        width: 95%; 
     }
 }
 
@@ -150,10 +181,11 @@ nav a:hover::after {
     }
 
     .contact-text {
-        padding: 30px 15px; 
+        padding: 20px; 
     }
 
     .contact-form {
-        padding: 30px 15px; 
+        padding: 20px; 
+        width: 100%; 
     }
 }

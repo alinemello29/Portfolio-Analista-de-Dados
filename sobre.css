@@ -63,8 +63,9 @@ nav a:hover::after {
 
 .about-container {
     display: flex; 
+    justify-content: space-between;
     align-items: center; 
-    padding: 20px; 
+    padding: 23px; 
     background-color: #0738FA; 
     flex-wrap: wrap; 
 }
@@ -85,12 +86,12 @@ nav a:hover::after {
 }
 
 .text-section h2 {
-    font-size: 4em; 
-    margin: 20px 0; 
+    font-size: 2em; 
+    margin: 900px; 
 }
 
 .text-section p {
-    font-size: 1.7em; 
+    font-size: 1.3em; 
     color: #d9dbdb;
     line-height: 1.3;
 }

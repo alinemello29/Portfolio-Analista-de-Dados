@@ -64,14 +64,15 @@ nav a:hover::after {
 .about-container {
     display: flex; 
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     padding: 23px; 
     background-color: #0738FA; 
     flex-wrap: wrap; 
 }
 
 .image-section {
-    margin-right: 220px; 
+    margin-right: 20px; 
+    margin-bottom: 30px; 
 }
 
 .image-section img {
@@ -83,11 +84,12 @@ nav a:hover::after {
 .text-section {
     max-width: 600px; 
     color: #d9dbdb;
+    margin-left: 20px; 
 }
 
 .text-section h2 {
     font-size: 2em; 
-    margin: 900px; 
+    margin: 0; 
 }
 
 .text-section p {
